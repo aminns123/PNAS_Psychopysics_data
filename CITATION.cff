@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the associated paper and, after release, the permanent dataset DOI."
+type: dataset
+title: "Intrinsic Organization of Contrast Sensitivity in Human Vision: CSF and PSF data preparation"
+version: "0.1.0-preparation"
+authors:
+  - family-names: Minns
+    given-names: Alexander
+  - family-names: Gepshtein
+    given-names: Sergei
+  - family-names: Janson
+    given-names: Natalia
+  - family-names: "Savel'ev"
+    given-names: Sergey
+abstract: "Local preparation of deidentified contrast sensitivity and preferred spatial frequency measurements. Historical bootstrap and model discrepancies are documented in the validation report."

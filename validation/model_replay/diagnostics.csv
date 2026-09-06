@@ -1,0 +1,9 @@
+participant_id,fit_target,status,warnings
+P01,f_n,executed,Covariance of the parameters could not be estimated
+P01,f_r,executed,
+P02,f_n,executed,Covariance of the parameters could not be estimated
+P02,f_r,executed,
+P03,f_n,executed,Covariance of the parameters could not be estimated
+P03,f_r,executed,
+P04,f_n,executed,Covariance of the parameters could not be estimated
+P04,f_r,executed,

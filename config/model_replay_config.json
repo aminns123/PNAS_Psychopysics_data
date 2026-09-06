@@ -1,0 +1,185 @@
+{
+  "source_id": "SUP05",
+  "fn_parameter_order": [
+    "wEE",
+    "wEI",
+    "wIE",
+    "wII",
+    "wEe",
+    "wEi",
+    "wIe",
+    "wIi",
+    "alpha",
+    "rI0",
+    "rE0"
+  ],
+  "fr_parameter_order": [
+    "wEE",
+    "wEe",
+    "wEI",
+    "wEi",
+    "wIE",
+    "wIe",
+    "wII",
+    "wIi",
+    "alpha"
+  ],
+  "fn_lower_bounds": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.9,
+    0,
+    0
+  ],
+  "fn_upper_bounds": [
+    1,
+    10,
+    10,
+    3,
+    1,
+    10,
+    3,
+    3,
+    1,
+    1,
+    1
+  ],
+  "participants": [
+    {
+      "participant_id": "P01",
+      "initial_fn": [
+        0.74,
+        0,
+        7.05,
+        2.12,
+        0.88,
+        2.76,
+        0.84,
+        2.63,
+        1.0,
+        0.79,
+        0.92
+      ],
+      "excluded_luminance_indices": [
+        7,
+        9
+      ],
+      "added_luminance_constraints": [],
+      "fn_maxfev": 500000,
+      "literal_fr_parameters": [
+        1.2,
+        0.88,
+        38.87,
+        3.74,
+        10.32,
+        1.5,
+        75.29,
+        1.5,
+        0.59
+      ]
+    },
+    {
+      "participant_id": "P02",
+      "initial_fn": [
+        0.74,
+        0,
+        7.05,
+        2.12,
+        0.88,
+        2.76,
+        0.84,
+        2.63,
+        1.0,
+        0.79,
+        0.92
+      ],
+      "excluded_luminance_indices": [],
+      "added_luminance_constraints": [],
+      "fn_maxfev": 5000000,
+      "literal_fr_parameters": [
+        0.32003916328219695,
+        0.715921029304315,
+        22.21051367834623,
+        4.679936898718579,
+        8.879958591521905,
+        2.7164184598713987,
+        51.0,
+        1.6799643300873932,
+        0.6506055004303203
+      ]
+    },
+    {
+      "participant_id": "P03",
+      "initial_fn": [
+        0.74,
+        0,
+        7.05,
+        2.12,
+        0.88,
+        2.76,
+        0.84,
+        2.63,
+        1.0,
+        0.79,
+        0.92
+      ],
+      "excluded_luminance_indices": [
+        4,
+        6
+      ],
+      "added_luminance_constraints": [
+        500,
+        600,
+        900
+      ],
+      "fn_maxfev": 5000000,
+      "literal_fr_parameters": [
+        0.8,
+        0.8,
+        28,
+        3.9,
+        7.4,
+        2.8,
+        42.5,
+        2,
+        0.67
+      ]
+    },
+    {
+      "participant_id": "P04",
+      "initial_fn": [
+        0.74,
+        0,
+        7.05,
+        2.12,
+        0.88,
+        2.76,
+        0.84,
+        2.63,
+        0.99,
+        0.79,
+        0.92
+      ],
+      "excluded_luminance_indices": [],
+      "added_luminance_constraints": [],
+      "fn_maxfev": 5000000,
+      "literal_fr_parameters": [
+        0.44337839559557307,
+        0.7748562874958744,
+        29.55207279916166,
+        6.257549814840517,
+        9.886334434742476,
+        4.648267054008116,
+        73.44,
+        2.417966477726506,
+        0.6780964711047098
+      ]
+    }
+  ]
+}

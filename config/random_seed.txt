@@ -1,0 +1,1 @@
+Historical random seed and generator state were not recorded in the supplied materials. No seed is invented. Saved PSF distributions and saved resampled CSFs are preserved. New exploratory resampling must use a separately identified seed and cannot replace the historical results.

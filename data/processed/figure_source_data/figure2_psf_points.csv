@@ -1,0 +1,13 @@
+figure,panel,condition_id,participant_id,luminance_cd_m2,f_pref_mean_cpd,percentile_2_5_cpd,percentile_97_5_cpd,n_saved_fits,n_pass_nrmse,n_retained,n_excluded,source_id,source_status
+2,D_summary,P01_L010,P01,10,3.23016005,2.5655,4.427637499999991,10000,10000,10000,0,P01_L010_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L020,P01,20,2.92880105,2.3615,4.0445,10000,10000,10000,0,P01_L020_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L025,P01,25,2.8511306,2.438,3.7901374999999904,10000,10000,10000,0,P01_L025_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L038,P01,38,2.6097986000000004,2.03,3.815,10000,10000,10000,0,P01_L038_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L050,P01,50,2.9281584499999997,2.4635,3.8915,10000,10000,10000,0,P01_L050_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L072,P01,72,2.6442465499999996,2.1575,3.917,10000,10000,10000,0,P01_L072_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L100,P01,100,5.382956750000001,3.5345,6.467,10000,10000,10000,0,P01_L100_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L149,P01,149,3.8198118500000002,2.6165,4.733,10000,10000,10000,0,P01_L149_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L200,P01,200,7.6099939,5.9116,8.8194,10000,10000,10000,0,P01_L200_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L300,P01,300,11.47006368,8.3854,13.6368,10000,10000,10000,0,P01_L300_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L370,P01,370,5.930538649999999,3.662,7.997637499999991,10000,10000,10000,0,P01_L370_FIT,selected_by_supplied_plotting_code
+2,D_summary,P01_L403,P01,403,7.075557500000001,5.6255,8.0735,10000,10000,10000,0,P01_L403_FIT,selected_by_supplied_plotting_code

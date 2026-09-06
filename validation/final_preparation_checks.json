@@ -1,0 +1,54 @@
+{
+  "preparation_date": "2026-09-06",
+  "standalone_workflow": {
+    "status": "PASS",
+    "exit_code": 0,
+    "runtime_seconds": 61.51980139999978,
+    "method": "Copied only the public candidate and executed code/run_all.py from a different working directory using observed validation dependencies.",
+    "in_package_virtual_environment_ignored": true,
+    "historical_random_draw_regeneration": "not_claimed",
+    "whole_paper_model_reproduction": "not_claimed"
+  },
+  "archive_integrity": {
+    "status": "PASS",
+    "bootstrap_source_files_exact_bytes": 310000,
+    "bootstrap_csf_points": 2550000,
+    "raw_or_saved_source_files_exact_bytes": 261,
+    "psf_rows_exact_tokens": 310000,
+    "python_files_syntax_checked": 13,
+    "csv_schemas_documented": 100
+  },
+  "raw_to_primary_csf": {
+    "status": "PASS",
+    "scope": "raw trials to archived CSF points; saved PSF distributions to preferred-frequency summaries; current-helper baseline fits unless skipped",
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "conditions": 31,
+    "trials_numeric_roundtrip_checked": 41606,
+    "staircases_checked": 804,
+    "csf_points_checked": 255,
+    "all_csf_points_exactly_equal": true,
+    "saved_psf_rows": 310000,
+    "retained_psf_rows": 287067,
+    "runtime_seconds": 8.1812230000005,
+    "historical_random_draw_regeneration": "not_claimed",
+    "whole_paper_model_reproduction": "not_claimed"
+  },
+  "source_content_preservation": {
+    "source_records_rechecked": 476,
+    "changed_source_ids": []
+  },
+  "automated_privacy_screen": {
+    "checked_text_or_compressed_text_files": 603,
+    "flagged_patterns": [],
+    "limit": "Automated pattern screening complements source metadata inspection; does not determine public-sharing consent."
+  },
+  "supplied_subset_helper_checks": {
+    "status": "PASS",
+    "eight_of_ten_combinations": 45,
+    "eight_of_nine_combinations": 9,
+    "reference": "Python itertools.combinations; no random resampling performed"
+  },
+  "release_status": "Local author-review candidate; unresolved scientific and release items are listed in AUTHOR_QUESTIONS.md."
+}

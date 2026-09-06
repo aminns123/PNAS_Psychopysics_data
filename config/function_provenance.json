@@ -1,0 +1,242 @@
+{
+  "code/analysis/source_helpers.py": [
+    {
+      "function": "indexInListRemove",
+      "source_id": "LIB001",
+      "source_start_line": 513,
+      "source_end_line": 523
+    },
+    {
+      "function": "findCorrespondingValue",
+      "source_id": "LIB001",
+      "source_start_line": 715,
+      "source_end_line": 722
+    },
+    {
+      "function": "count_reversals_HighLow",
+      "source_id": "LIB001",
+      "source_start_line": 4935,
+      "source_end_line": 4975
+    },
+    {
+      "function": "makeList",
+      "source_id": "LIB001",
+      "source_start_line": 6564,
+      "source_end_line": 6568
+    },
+    {
+      "function": "AoE",
+      "source_id": "LIB001",
+      "source_start_line": 7403,
+      "source_end_line": 7406
+    },
+    {
+      "function": "goodnessFit_nrmse",
+      "source_id": "LIB001",
+      "source_start_line": 21338,
+      "source_end_line": 21381
+    },
+    {
+      "function": "getIndex_sortDataRegion",
+      "source_id": "LIB001",
+      "source_start_line": 21385,
+      "source_end_line": 21392
+    },
+    {
+      "function": "fit_to_CSF",
+      "source_id": "LIB001",
+      "source_start_line": 21483,
+      "source_end_line": 21495
+    },
+    {
+      "function": "fitFunctionLimit",
+      "source_id": "LIB001",
+      "source_start_line": 21499,
+      "source_end_line": 21522
+    },
+    {
+      "function": "fitFunction",
+      "source_id": "LIB001",
+      "source_start_line": 21716,
+      "source_end_line": 21739
+    }
+  ],
+  "code/bootstrap/supplied_bootstrap_helpers.py": [
+    {
+      "function": "condition1",
+      "source_id": "LIB001",
+      "source_start_line": 1626,
+      "source_end_line": 1636
+    },
+    {
+      "function": "condition2",
+      "source_id": "LIB001",
+      "source_start_line": 1641,
+      "source_end_line": 1655
+    },
+    {
+      "function": "condition3",
+      "source_id": "LIB001",
+      "source_start_line": 1660,
+      "source_end_line": 1669
+    },
+    {
+      "function": "endCondition",
+      "source_id": "LIB001",
+      "source_start_line": 1674,
+      "source_end_line": 1687
+    },
+    {
+      "function": "removeErrorIndex",
+      "source_id": "LIB001",
+      "source_start_line": 1692,
+      "source_end_line": 1705
+    },
+    {
+      "function": "conditionP1End",
+      "source_id": "LIB001",
+      "source_start_line": 1710,
+      "source_end_line": 1716
+    },
+    {
+      "function": "listCombitorial",
+      "source_id": "LIB001",
+      "source_start_line": 1802,
+      "source_end_line": 1807
+    },
+    {
+      "function": "find_indexPop_Complete",
+      "source_id": "LIB001",
+      "source_start_line": 1811,
+      "source_end_line": 1862
+    },
+    {
+      "function": "weberContrast",
+      "source_id": "LIB001",
+      "source_start_line": 4742,
+      "source_end_line": 4751
+    },
+    {
+      "function": "permutationsBootstrapNp",
+      "source_id": "LIB001",
+      "source_start_line": 20815,
+      "source_end_line": 20857
+    },
+    {
+      "function": "factorialN",
+      "source_id": "LIB001",
+      "source_start_line": 22354,
+      "source_end_line": 22358
+    },
+    {
+      "function": "nChooseR_list",
+      "source_id": "LIB001",
+      "source_start_line": 22363,
+      "source_end_line": 22368
+    },
+    {
+      "function": "singleListpop",
+      "source_id": "LIB001",
+      "source_start_line": 22457,
+      "source_end_line": 22469
+    },
+    {
+      "function": "createCombitorialList",
+      "source_id": "LIB001",
+      "source_start_line": 22473,
+      "source_end_line": 22490
+    }
+  ],
+  "code/model/supplied_model_functions.py": [
+    {
+      "function": "convert_wavenumber_parameters_to_frequency",
+      "source_id": "LIB001",
+      "source_start_line": 7151,
+      "source_end_line": 7182
+    },
+    {
+      "function": "model_EI_kn",
+      "source_id": "LIB001",
+      "source_start_line": 7184,
+      "source_end_line": 7257
+    },
+    {
+      "function": "model_EI_fn",
+      "source_id": "LIB001",
+      "source_start_line": 7270,
+      "source_end_line": 7283
+    },
+    {
+      "function": "preferredk_r0_abc",
+      "source_id": "LIB001",
+      "source_start_line": 9188,
+      "source_end_line": 9207
+    },
+    {
+      "function": "coupledODEs_rE0_rI0",
+      "source_id": "LIB001",
+      "source_start_line": 9210,
+      "source_end_line": 9228
+    },
+    {
+      "function": "jacobian_numeric",
+      "source_id": "LIB001",
+      "source_start_line": 9270,
+      "source_end_line": 9281
+    },
+    {
+      "function": "rErI_eq0_simulation",
+      "source_id": "LIB001",
+      "source_start_line": 9293,
+      "source_end_line": 9383
+    },
+    {
+      "function": "simulate_PSF",
+      "source_id": "LIB001",
+      "source_start_line": 9449,
+      "source_end_line": 9543
+    },
+    {
+      "function": "cached_equilibrium",
+      "source_id": "LIB001",
+      "source_start_line": 9548,
+      "source_end_line": 9558
+    },
+    {
+      "function": "simulate_equilibria",
+      "source_id": "LIB001",
+      "source_start_line": 9576,
+      "source_end_line": 9595
+    },
+    {
+      "function": "run_ISF_model_low",
+      "source_id": "LIB001",
+      "source_start_line": 9619,
+      "source_end_line": 9625
+    },
+    {
+      "function": "run_ISF_model_high",
+      "source_id": "LIB001",
+      "source_start_line": 9627,
+      "source_end_line": 9638
+    },
+    {
+      "function": "convert_psf_parameters_to_frequency",
+      "source_id": "LIB001",
+      "source_start_line": 9640,
+      "source_end_line": 9669
+    },
+    {
+      "function": "simulate_psf_history",
+      "source_id": "LIB001",
+      "source_start_line": 9692,
+      "source_end_line": 9744
+    },
+    {
+      "function": "model_psf_function",
+      "source_id": "LIB001",
+      "source_start_line": 9754,
+      "source_end_line": 9778
+    }
+  ]
+}

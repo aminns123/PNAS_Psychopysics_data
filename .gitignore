@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
+validation/new_resampling/
+INTERNAL_SOURCE_SNAPSHOT/
+*_PRIVATE*

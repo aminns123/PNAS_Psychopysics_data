@@ -1,0 +1,32 @@
+condition_id,baseline_fit_peak_cpd,nrmse,n_fit_points,grid_min_cpd,grid_max_exclusive_cpd,warning_count,warnings,status
+P01_L010,3.000800000000001,0.05115008004614295,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L020,3.078500000000001,0.08964935781005705,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L025,2.5864000000000007,0.08278327272420431,12,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L038,2.4310000000000005,0.06693811172876314,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L050,2.715900000000001,0.08505739720059527,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L072,2.6123000000000007,0.16043154375340313,7,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L100,4.606600000000001,0.1064669698814314,7,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L149,4.477100000000001,0.11798575092403507,7,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L200,8.69068,0.07862969007580577,6,0.1,43.93,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L300,12.021760000000002,0.027824535304730898,6,0.1,43.93,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L370,6.134700000000001,0.09138201389891089,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P01_L403,6.445500000000001,0.08267089851695467,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P02_L010,3.340000000000001,0.060767437368536556,8,0.1,32.5,0,,recomputed_with_current_supplied_plotting_helpers
+P02_L026,3.130300000000001,0.09074713636046712,6,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P02_L049,2.793600000000001,0.020324874620276306,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P02_L100,4.166300000000001,0.3051261559515167,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P02_L204,6.963500000000002,0.29289570346613614,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P02_L300,6.341900000000001,0.04509137214419582,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P03_L010,2.8195000000000006,0.0945127913344407,8,0.1,26.0,2374,divide by zero encountered in divide,recomputed_with_current_supplied_plotting_helpers
+P03_L049,2.1461000000000006,0.04951606922979847,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P03_L100,2.0943000000000005,0.11601691689013208,8,0.1,26.0,6448,divide by zero encountered in divide,recomputed_with_current_supplied_plotting_helpers
+P03_L200,2.9408,0.1815246812358964,8,0.1,21.3,0,,recomputed_with_current_supplied_plotting_helpers
+P03_L300,2.8972000000000007,0.26859248046569184,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P03_L370,5.383600000000001,0.1727275111756607,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P03_L415,4.347600000000001,0.2984443434663682,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P04_L010,2.9749000000000008,0.08974752247832715,8,0.1,26.0,3890,divide by zero encountered in divide,recomputed_with_current_supplied_plotting_helpers
+P04_L049,2.0684000000000005,0.0633194198620401,8,0.1,26.0,6149,divide by zero encountered in divide,recomputed_with_current_supplied_plotting_helpers
+P04_L100,2.0692999999999997,0.1918635673930055,13,0.1,42.0,1757,divide by zero encountered in divide,recomputed_with_current_supplied_plotting_helpers
+P04_L200,5.505099999999999,0.17193308429933066,8,0.1,42.0,0,,recomputed_with_current_supplied_plotting_helpers
+P04_L300,6.859900000000001,0.1160588071605506,8,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers
+P04_L370,4.347600000000001,0.052402901731244275,7,0.1,26.0,0,,recomputed_with_current_supplied_plotting_helpers

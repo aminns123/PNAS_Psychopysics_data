@@ -1,0 +1,17 @@
+{
+  "fits_checked": 155,
+  "failures": 0,
+  "all_5_metrics_match_4dp": 18,
+  "all_5_metrics_within_0_0001": 21,
+  "max_f_pref_absolute_difference_cpd": 5.813999999999993,
+  "sample_indices": [
+    0,
+    1,
+    1234,
+    5000,
+    9999
+  ],
+  "runtime_seconds": 21.676636800000324,
+  "historical_grid_candidate": "min(x) to max(x)+10, 1000-step arange; inferred from saved metrics; current supplied helper uses 0.1",
+  "samples_matching_any_saved_row_at_4dp": 37
+}

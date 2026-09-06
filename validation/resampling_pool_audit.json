@@ -1,0 +1,567 @@
+[
+  {
+    "condition_id": "P01_L010",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 5,
+      "1.0": 4,
+      "2.0": 5,
+      "4.0": 4,
+      "6.0": 6,
+      "8.0": 5,
+      "11.3": 6,
+      "16.0": 9
+    }
+  },
+  {
+    "condition_id": "P01_L020",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 5,
+      "2.0": 5,
+      "4.0": 5,
+      "6.0": 5,
+      "8.0": 5,
+      "11.3": 5,
+      "16.0": 6
+    }
+  },
+  {
+    "condition_id": "P01_L025",
+    "input_files": 10000,
+    "input_rows": 120000,
+    "first10": 119988,
+    "indices1to9": 119988,
+    "resampled_points": 119988,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 5,
+      "2.0": 4,
+      "2.5": 5,
+      "3.0": 3,
+      "3.5": 4,
+      "4.0": 4,
+      "5.0": 4,
+      "6.0": 5,
+      "8.0": 3,
+      "11.3": 6,
+      "16.0": 4
+    }
+  },
+  {
+    "condition_id": "P01_L038",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 4,
+      "2.0": 4,
+      "4.0": 4,
+      "6.0": 4,
+      "8.0": 4,
+      "11.3": 5,
+      "16.0": 4
+    }
+  },
+  {
+    "condition_id": "P01_L050",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 3,
+      "1.0": 5,
+      "2.0": 4,
+      "4.0": 4,
+      "6.0": 4,
+      "8.0": 4,
+      "11.3": 5,
+      "16.0": 5
+    }
+  },
+  {
+    "condition_id": "P01_L072",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 4,
+      "2.0": 3,
+      "4.0": 4,
+      "6.0": 4,
+      "8.0": 4,
+      "11.3": 5,
+      "16.0": 4
+    }
+  },
+  {
+    "condition_id": "P01_L100",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 6,
+      "2.0": 4,
+      "4.0": 3,
+      "6.0": 4,
+      "8.0": 4,
+      "11.3": 5,
+      "16.0": 6
+    }
+  },
+  {
+    "condition_id": "P01_L149",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 4,
+      "2.0": 3,
+      "4.0": 4,
+      "6.0": 4,
+      "8.0": 6,
+      "11.3": 5,
+      "16.0": 3
+    }
+  },
+  {
+    "condition_id": "P01_L200",
+    "input_files": 10000,
+    "input_rows": 70000,
+    "first10": 69993,
+    "indices1to9": 69993,
+    "resampled_points": 69993,
+    "unique_sensitivities_per_frequency": {
+      "0.53": 7,
+      "1.06": 7,
+      "2.121": 5,
+      "4.241": 7,
+      "8.483": 5,
+      "16.965": 6,
+      "33.93": 7
+    }
+  },
+  {
+    "condition_id": "P01_L300",
+    "input_files": 10000,
+    "input_rows": 70000,
+    "first10": 69993,
+    "indices1to9": 69993,
+    "resampled_points": 69993,
+    "unique_sensitivities_per_frequency": {
+      "0.53": 7,
+      "1.06": 5,
+      "2.121": 5,
+      "4.241": 4,
+      "8.483": 5,
+      "16.965": 4,
+      "33.93": 6
+    }
+  },
+  {
+    "condition_id": "P01_L370",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 3,
+      "1.0": 4,
+      "2.0": 4,
+      "4.0": 4,
+      "6.0": 4,
+      "8.0": 3,
+      "12.0": 4,
+      "16.0": 4
+    }
+  },
+  {
+    "condition_id": "P01_L403",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 4,
+      "2.0": 4,
+      "4.0": 4,
+      "6.0": 3,
+      "8.0": 3,
+      "12.0": 4,
+      "16.0": 5
+    }
+  },
+  {
+    "condition_id": "P02_L010",
+    "input_files": 10000,
+    "input_rows": 90000,
+    "first10": 89991,
+    "indices1to9": 89991,
+    "resampled_points": 89991,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 3,
+      "2.0": 4,
+      "4.0": 5,
+      "8.0": 4,
+      "11.3": 4,
+      "16.0": 6,
+      "22.5": 4,
+      "32.0": 5
+    }
+  },
+  {
+    "condition_id": "P02_L026",
+    "input_files": 10000,
+    "input_rows": 70000,
+    "first10": 69993,
+    "indices1to9": 69993,
+    "resampled_points": 69993,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 5,
+      "1.0": 4,
+      "2.0": 4,
+      "4.0": 4,
+      "8.0": 4,
+      "16.0": 6,
+      "32.0": 4
+    }
+  },
+  {
+    "condition_id": "P02_L049",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 3,
+      "1.0": 5,
+      "2.0": 5,
+      "4.0": 5,
+      "6.0": 5,
+      "8.0": 5,
+      "11.3": 8,
+      "16.0": 5
+    }
+  },
+  {
+    "condition_id": "P02_L100",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 6,
+      "1.0": 7,
+      "2.0": 6,
+      "4.0": 8,
+      "6.0": 6,
+      "8.0": 7,
+      "11.3": 7,
+      "16.0": 5
+    }
+  },
+  {
+    "condition_id": "P02_L204",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 6,
+      "2.0": 3,
+      "4.0": 6,
+      "6.0": 5,
+      "8.0": 5,
+      "12.0": 4,
+      "16.0": 5
+    }
+  },
+  {
+    "condition_id": "P02_L300",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 3,
+      "2.0": 3,
+      "4.0": 4,
+      "6.0": 3,
+      "8.0": 4,
+      "12.0": 4,
+      "16.0": 4
+    }
+  },
+  {
+    "condition_id": "P03_L010",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 5,
+      "1.0": 4,
+      "2.0": 4,
+      "4.0": 5,
+      "6.0": 4,
+      "8.0": 7,
+      "11.3": 5,
+      "16.0": 7
+    }
+  },
+  {
+    "condition_id": "P03_L049",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 6,
+      "1.0": 5,
+      "2.0": 5,
+      "4.0": 5,
+      "6.0": 7,
+      "8.0": 7,
+      "11.3": 9,
+      "16.0": 9
+    }
+  },
+  {
+    "condition_id": "P03_L100",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 6,
+      "2.0": 8,
+      "4.0": 7,
+      "6.0": 6,
+      "8.0": 5,
+      "11.3": 4,
+      "16.0": 7
+    }
+  },
+  {
+    "condition_id": "P03_L200",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 6,
+      "1.0": 8,
+      "2.0": 6,
+      "3.0": 4,
+      "4.0": 7,
+      "6.0": 7,
+      "8.0": 7,
+      "11.3": 5
+    }
+  },
+  {
+    "condition_id": "P03_L300",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 6,
+      "1.0": 5,
+      "2.0": 4,
+      "4.0": 5,
+      "6.0": 4,
+      "8.0": 4,
+      "12.0": 5,
+      "16.0": 5
+    }
+  },
+  {
+    "condition_id": "P03_L370",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 5,
+      "2.0": 4,
+      "4.0": 4,
+      "6.0": 4,
+      "8.0": 5,
+      "12.0": 3,
+      "16.0": 6
+    }
+  },
+  {
+    "condition_id": "P03_L415",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 5,
+      "1.0": 5,
+      "2.0": 5,
+      "4.0": 4,
+      "6.0": 5,
+      "8.0": 6,
+      "12.0": 4,
+      "16.0": 6
+    }
+  },
+  {
+    "condition_id": "P04_L010",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 5,
+      "2.0": 6,
+      "4.0": 5,
+      "6.0": 5,
+      "8.0": 6,
+      "11.3": 5,
+      "16.0": 5
+    }
+  },
+  {
+    "condition_id": "P04_L049",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 5,
+      "2.0": 6,
+      "4.0": 5,
+      "6.0": 6,
+      "8.0": 5,
+      "11.3": 7,
+      "16.0": 8
+    }
+  },
+  {
+    "condition_id": "P04_L100",
+    "input_files": 10000,
+    "input_rows": 130000,
+    "first10": 129987,
+    "indices1to9": 129987,
+    "resampled_points": 129987,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 6,
+      "0.8": 5,
+      "1.0": 5,
+      "1.5": 6,
+      "2.0": 4,
+      "3.0": 6,
+      "4.0": 6,
+      "5.0": 4,
+      "6.0": 7,
+      "8.0": 4,
+      "11.3": 8,
+      "16.0": 5,
+      "32.0": 3
+    }
+  },
+  {
+    "condition_id": "P04_L200",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 7,
+      "1.0": 6,
+      "2.0": 9,
+      "4.0": 5,
+      "8.0": 7,
+      "11.3": 6,
+      "16.0": 6,
+      "32.0": 6
+    }
+  },
+  {
+    "condition_id": "P04_L300",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 5,
+      "1.0": 4,
+      "2.0": 4,
+      "4.0": 3,
+      "6.0": 4,
+      "8.0": 5,
+      "12.0": 4,
+      "16.0": 5
+    }
+  },
+  {
+    "condition_id": "P04_L370",
+    "input_files": 10000,
+    "input_rows": 80000,
+    "first10": 79992,
+    "indices1to9": 79992,
+    "resampled_points": 79992,
+    "unique_sensitivities_per_frequency": {
+      "0.5": 4,
+      "1.0": 4,
+      "2.0": 4,
+      "4.0": 5,
+      "6.0": 4,
+      "8.0": 4,
+      "12.0": 5,
+      "16.0": 4
+    }
+  }
+]

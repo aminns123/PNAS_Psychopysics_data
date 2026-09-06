@@ -1,0 +1,43 @@
+{
+  "package_version": "0.1.0-preparation",
+  "prepared_date": "2026-09-06",
+  "participant_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04"
+  ],
+  "source_scope": "CSF and preferred spatial frequency for manuscript Figures 2 and 3",
+  "csf_fit": {
+    "method": "trf",
+    "maxfev": 5000000,
+    "p0": null,
+    "bounds": null,
+    "curve_grid": "numpy.arange(0.1, max(retained_f)+10, (max(retained_f)+10-0.1)/1000)",
+    "function": "b*exp(-(f-f0)) + a*exp(-((f-f0)/f1)**2)",
+    "parameter_order": [
+      "b",
+      "a",
+      "f1",
+      "f0"
+    ],
+    "fixed_f2_cpd": 1
+  },
+  "psf_summary": {
+    "nrmse_inclusive": [
+      0,
+      0.3
+    ],
+    "f_pref_exclusive_min_cpd": 1.05,
+    "central_statistic": "arithmetic_mean",
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "percentile_method": "linear",
+    "historical_rng_seed": null,
+    "historical_rng_state": null,
+    "saved_rows_per_condition": 10000,
+    "saved_fit_iteration_linkage": "saved row order preserved; original iteration labels and failure log not recorded"
+  }
+}

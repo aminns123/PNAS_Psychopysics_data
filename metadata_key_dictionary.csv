@@ -1,0 +1,110 @@
+source_key,description,units,observed_values,interpretation_status
+BRTRR,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1.2,Retained as source text; do not infer operational meaning.
+BRTRR:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1.2,Retained as source text; do not infer operational meaning.
+Lbg,Source metadata field; definitive acquisition meaning not established.,unconfirmed,25,Retained as source text; do not infer operational meaning.
+Lbg:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,25,Retained as source text; do not infer operational meaning.
+Lmax,Source metadata field; definitive acquisition meaning not established.,unconfirmed,25,Retained as source text; do not infer operational meaning.
+Lmax:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,25,Retained as source text; do not infer operational meaning.
+Lmin,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+Lmin:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+Pixel Per Inch,Source metadata field; definitive acquisition meaning not established.,unconfirmed,164,Retained as source text; do not infer operational meaning.
+Pixel Pitch (mm),Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.155*0.155,Retained as source text; do not infer operational meaning.
+Pixel width (m),Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.00023289062499999997,Retained as source text; do not infer operational meaning.
+Probe_Height_Deg,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.13343643869556676,Retained as source text; do not infer operational meaning.
+Probe_width_Deg,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.013343649840352816,Retained as source text; do not infer operational meaning.
+Reversal_or_Trial,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1,Retained as source text; do not infer operational meaning.
+Reversal_or_Trial:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1,Retained as source text; do not infer operational meaning.
+SdeX,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.05,Retained as source text; do not infer operational meaning.
+SdeY,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.05,Retained as source text; do not infer operational meaning.
+Sdey,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.05,Retained as source text; do not infer operational meaning.
+avg_monitor_cdm2:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,200 | 300,Retained as source text; do not infer operational meaning.
+bg,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.189 | 0.19 | 0.26 | 0.286 | 0.29 | 0.35 | 0.39 | 0.392 | 0.46 | 0.54 | 0.63 | 0.72 | 0.735 | 0.86 | 0.95 | 0.98 | 0.99,Retained as source text; do not infer operational meaning.
+bg:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.735 | 0.89,Retained as source text; do not infer operational meaning.
+bkg_intensity,Background intensity in source display coordinates,dimensionless,0.189 | 0.19 | 0.26 | 0.286 | 0.29 | 0.35 | 0.39 | 0.392 | 0.46 | 0.54 | 0.63 | 0.72 | 0.735 | 0.86 | 0.95 | 0.98 | 0.99,Used by contrast-normalization formula.
+bkg_intensity:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.735 | 0.89,Retained as source text; do not infer operational meaning.
+bkg_monitor_cdm2,Saved background luminance setting,cd/m^2,10.0 | 10.22 | 100 | 149 | 20 | 200 | 204 | 25 | 26.15 | 300 | 370 | 38 | 403 | 415 | 49 | 50 | 72,Field name; compare condition labels.
+box,Source metadata field; definitive acquisition meaning not established.,unconfirmed,False,Retained as source text; do not infer operational meaning.
+box:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,False,Retained as source text; do not infer operational meaning.
+condRule,Source metadata field; definitive acquisition meaning not established.,unconfirmed,2,Retained as source text; do not infer operational meaning.
+condRule:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,2,Retained as source text; do not infer operational meaning.
+contr,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.018 | 0.117,Retained as source text; do not infer operational meaning.
+contr:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.15300000000000002 | 0.162,Retained as source text; do not infer operational meaning.
+correctTick,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+correctTick:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+count_Reversals,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+count_Reversals:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+distance_To_Monitor,Viewing distance,m,1.0,Confirmed by supplied code setting 100e-2 and manuscript 100 cm.
+distance_To_Monitor:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1.0,Retained as source text; do not infer operational meaning.
+flanker_displacement,Source metadata field; definitive acquisition meaning not established.,unconfirmed,3.0,Retained as source text; do not infer operational meaning.
+flanker_displacement:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,3.0,Retained as source text; do not infer operational meaning.
+flanker_width,Source metadata field; definitive acquisition meaning not established.,unconfirmed,5.0,Retained as source text; do not infer operational meaning.
+flanker_width:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,5.0,Retained as source text; do not infer operational meaning.
+fs,Saved frequency parameter,source units,31.5 | 47.25 | 63.0 | 78.75 | 81.9 | 88.19999999999999 | 94.5,Trial source_col_15 / 31.5 supplies analyzed frequency.
+fs:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,100 | 167.0 | 260,Retained as source text; do not infer operational meaning.
+gamma,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+gamma:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+human_LR,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+human_LR:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+limit_Trial_Run,Source metadata field; definitive acquisition meaning not established.,unconfirmed,100,Retained as source text; do not infer operational meaning.
+limit_Trial_Run:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,100,Retained as source text; do not infer operational meaning.
+logUNIT_DW,Saved logarithmic downward step parameter,log units; base unconfirmed,0.30294,Value preserved; do not infer log base.
+logUNIT_DW:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.25245 | 0.30294,Retained as source text; do not infer operational meaning.
+logUNIT_UP,Saved logarithmic upward step parameter,log units; base unconfirmed,0.36,Value preserved; do not infer log base.
+logUNIT_UP:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.3 | 0.36,Retained as source text; do not infer operational meaning.
+max_intensity,Maximum source display intensity,dimensionless,1.0,Source value; normalization uses 1.
+max_intensity:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1.0,Retained as source text; do not infer operational meaning.
+max_monitor_cdm2,Source maximum display luminance setting,cd/m^2,400 | 500,Field name; not a calibration measurement for each trial.
+max_monitor_cdm2:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,400,Retained as source text; do not infer operational meaning.
+nDW,Saved down-rule setting,count,4,Metadata may contain initialization values; compare acquisition logic.
+nDW:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,4,Retained as source text; do not infer operational meaning.
+nUP,Saved up-rule setting,count,1,Metadata may contain initialization values; compare acquisition logic.
+nUP:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1,Retained as source text; do not infer operational meaning.
+number_trials,Source metadata field; definitive acquisition meaning not established.,unconfirmed,50 | 80,Retained as source text; do not infer operational meaning.
+number_trials:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,100,Retained as source text; do not infer operational meaning.
+ph,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+ph:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+pixel_metre_ratio,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.00023289062499999997,Retained as source text; do not infer operational meaning.
+posY,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+posY:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+preReversalStepDW,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.36,Retained as source text; do not infer operational meaning.
+preReversalStepDW:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.3 | 0.35 | 0.36,Retained as source text; do not infer operational meaning.
+probe_LR,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+probe_LR:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0,Retained as source text; do not infer operational meaning.
+probe_displacement_dx,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.4 | 0.42,Retained as source text; do not infer operational meaning.
+probe_displacement_dx:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.48,Retained as source text; do not infer operational meaning.
+probe_displacement_dy,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.2,Retained as source text; do not infer operational meaning.
+probe_displacement_dy:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.2,Retained as source text; do not infer operational meaning.
+probe_pos (m),Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+probe_pos:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+rateDW,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.5,Retained as source text; do not infer operational meaning.
+rateDW:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.5,Retained as source text; do not infer operational meaning.
+rateUP,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.5,Retained as source text; do not infer operational meaning.
+rateUP:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.5,Retained as source text; do not infer operational meaning.
+reversalN,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+reversalN:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+reversePOINT,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1,Retained as source text; do not infer operational meaning.
+reversePOINT:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1,Retained as source text; do not infer operational meaning.
+speed,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+speed:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+start_weber_Contrast,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.15 | 0.4 | 1.0,Retained as source text; do not infer operational meaning.
+start_weber_Contrast:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.15 | 0.32,Retained as source text; do not infer operational meaning.
+stepDWUP,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.005,Retained as source text; do not infer operational meaning.
+stepDWUP:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.005,Retained as source text; do not infer operational meaning.
+terminationINDEX,Source metadata field; definitive acquisition meaning not established.,unconfirmed,9,Retained as source text; do not infer operational meaning.
+terminationINDEX:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,9,Retained as source text; do not infer operational meaning.
+text,Source metadata field; definitive acquisition meaning not established.,unconfirmed,-1,Retained as source text; do not infer operational meaning.
+text:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,-1,Retained as source text; do not infer operational meaning.
+theta,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+theta:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.0,Retained as source text; do not infer operational meaning.
+time_Stimulus,Saved stimulus-timing setting,unconfirmed,250,250 occurs; reconcile with manuscript 300 ms and acquisition code.
+time_Stimulus:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,250,Retained as source text; do not infer operational meaning.
+trialPOINT,Source metadata field; definitive acquisition meaning not established.,unconfirmed,5 | 6 | 7 | 8 | 9,Retained as source text; do not infer operational meaning.
+trialPOINT:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,5 | 6 | 7,Retained as source text; do not infer operational meaning.
+width,Source metadata field; definitive acquisition meaning not established.,unconfirmed,374.94805047229414,Retained as source text; do not infer operational meaning.
+width:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,665.8272745893497,Retained as source text; do not infer operational meaning.
+win_widthx:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.33638,Retained as source text; do not infer operational meaning.
+win_widthx_Meter,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.5962,Retained as source text; do not infer operational meaning.
+win_widthx_Pixel,Source metadata field; definitive acquisition meaning not established.,unconfirmed,1440,Retained as source text; do not infer operational meaning.
+win_widthy:,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.2303,Retained as source text; do not infer operational meaning.
+win_widthy_Meter,Source metadata field; definitive acquisition meaning not established.,unconfirmed,0.3353,Retained as source text; do not infer operational meaning.
+win_widthy_Pixel,Source metadata field; definitive acquisition meaning not established.,unconfirmed,2560,Retained as source text; do not infer operational meaning.

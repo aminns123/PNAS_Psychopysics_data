@@ -1,0 +1,13 @@
+level,record_id,condition_id,rule,reason,source_id,details
+inactive_csf_fit_index,9,P01_L050,zero-based point index from final plotting driver,out_of_range_no_effect,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+inactive_csf_fit_index,10,P01_L050,zero-based point index from final plotting driver,out_of_range_no_effect,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+csf_fit_point,2,P01_L072,zero-based point index from final plotting driver,author_reason_not_recorded,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+csf_fit_point,2,P01_L100,zero-based point index from final plotting driver,author_reason_not_recorded,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+csf_fit_point,2,P01_L149,zero-based point index from final plotting driver,author_reason_not_recorded,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+csf_fit_point,2,P01_L200,zero-based point index from final plotting driver,author_reason_not_recorded,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+csf_fit_point,2,P01_L300,zero-based point index from final plotting driver,author_reason_not_recorded,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+staircase,P02_L010_T003_A01,P02_L010,explicit pair in supplied generation configuration,author_reason_not_recorded,SUP07,Retained in raw export; omitted from the reproduced primary CSF.
+staircase,P02_L010_T003_A02,P02_L010,explicit pair in supplied generation configuration,author_reason_not_recorded,SUP07,Retained in raw export; omitted from the reproduced primary CSF.
+csf_fit_point,8,P02_L010,zero-based point index from final plotting driver,author_reason_not_recorded,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+csf_fit_point,6,P02_L026,zero-based point index from final plotting driver,author_reason_not_recorded,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
+csf_fit_point,0,P04_L370,zero-based point index from final plotting driver,author_reason_not_recorded,SUP08,Original point retained in csf_thresholds.csv and plotted CSF points.
