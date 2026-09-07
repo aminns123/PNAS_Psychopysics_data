@@ -1,9 +1,0 @@
-# Recorded display settings and calibration candidates
-
-`data/raw/display_calibration.csv` contains the 31 selected condition settings: nominal/measured luminance labels used in the analysis, background intensity values, source maximum monitor settings, and the frequency-conversion divisor. The luminance-to-folder associations come from the supplied source configuration and are supported by exact primary-CSF reproduction. They are not a reconstructed photometer calibration curve.
-
-`data/raw/stimulus_metadata.csv` retains the saved source key/value settings after removing date/linkage fields. `metadata_key_dictionary.csv` describes what can be established from field names and source code. Values such as `time_Stimulus = 250` should be reconciled with the paper's 300-ms description. Units or operational meanings that were not established are left explicitly unconfirmed.
-
-Four candidate records from the monitor bit-depth collection were copied as `data/calibration_reference/cal01.csv` through `cal04.csv`. CAL01 and CAL02 are five-column raw numeric records; CAL03 and CAL04 are two-column associated summary files. The source filenames suggest luminance/contrast calibration, but definitive column definitions and association with the paper's 400/500-cd/m2 settings were not established. Generic source-column labels preserve every value without making those assignments. No candidate calibration is applied to the trial data.
-
-The original source function calls `(stimulus_intensity - background_intensity)/(1 - background_intensity)` 'Weber contrast'. This package uses the neutral label `contrast_normalized_source` because the formula alone does not establish a physically calibrated luminance contrast. Raw source columns and candidate calibration values are retained for author review.
