@@ -1,25 +1,27 @@
-# Reproduction sequence
+# Reproduce the empirical CSF/PSF results
 
-Run these commands from the root of a fresh copy. The code locates package inputs relative to its own location and never reads from the original workstation folders.
+Start from a fresh copy. All inputs are located relative to the package, without reading the original acquisition folders.
 
-1. Create an environment: `python -m venv .venv`. Activate it (`.venv\Scripts\activate` on Windows or `source .venv/bin/activate` on macOS/Linux), then run `python -m pip install -r requirements.txt`.
-2. Verify the unmodified package: `python code/tests/verify_package.py`. It checks all manifest hashes, all 310,000 original bootstrap-file checksums reconstructed from the consolidated tables, raw/source-file hashes, PSF row tokens and flags, and dictionary coverage. About 6 seconds before file-manifest verification on the preparation machine.
-3. Reproduce primary thresholds, CSF sensitivities and saved PSF summaries: `python code/analysis/reproduce.py`. It also refits all 31 primary CSFs with the current supplied helper. Outputs: `validation/recomputed/`. About 7 seconds. Add `--skip-fits` to audit only raw thresholds and archived summaries.
-4. Plot CSFs and PSF distributions: `python code/make_figures/plot_data.py`. Outputs: four CSF panels and one all-subject PSF figure as PNG/SVG in `validation/figures/`. About 8 seconds.
-5. Plot staircase diagnostics: `python code/make_figures/plot_staircases.py`. Outputs: one four-example PNG/SVG. Add `--condition P01_L010` to plot every staircase in that condition. About 2 seconds for the examples.
-6. Audit historical saved fits against available inputs: `python code/bootstrap/audit_saved_fits.py`. Five fixed indices per condition (155 fits); about 22 seconds. Outputs: `validation/sample_saved_fit_checks.csv` and `sample_fit_summary.json`. This is a diagnostic comparison, not a claim of historical equivalence; read the report. `--all` refits all 310,000 stored inputs and writes separate all-fit files; estimated many hours, not executed during preparation.
-7. Replay the current supplied model functions: `python code/model/replay_supplied_models.py`. Outputs: separate `f_n` and `f_r` parameters, curves, actual fitting targets and diagnostics in `validation/model_replay/`. About 5 seconds. This preserves the source workflow for review, including its unresolved manuscript discrepancies. It does not refit the resonance parameters: it evaluates the literal parameter sets found in the plotting functions.
+1. Create and activate a Python 3.12 environment. Install `python -m pip install -r requirements.txt`.
+2. Run `python code/tests/verify_package.py` to check every manifest file, reconstruct and verify all 310,000 saved CSF source files, compare saved PSF row tokens and flags, and check dictionary coverage.
+3. Run `python code/analysis/reproduce.py` to reproduce primary thresholds, all 255 CSF observations and all 31 PSF summaries, and refit the 31 baseline CSFs using the supplied current helper. Results go to `validation/recomputed/`. `--skip-fits` audits only the observations and saved-distribution summaries.
+4. Run `python code/make_figures/plot_data.py` for four CSF figures and one PSF figure, and `python code/make_figures/plot_staircases.py` for staircase examples. PNG and SVG outputs go to `validation/figures/`. The staircase script accepts `--condition P01_L010` to show all staircases from one condition.
+5. Run `python code/bootstrap/audit_saved_fits.py` to compare five fixed input indices per condition with saved fit results. The 155 comparisons diagnose historical correspondence; successful execution does not imply agreement. `--all` refits all 310,000 stored inputs and writes separate outputs; it may take many hours and was not part of the original preparation.
 
-`python code/run_all.py` runs steps 2-7 in sequence. A successful execution means these declared computations ran; it does not establish that the disputed historical inputs or model descriptions are correct.
+`python code/run_all.py` runs steps 2-5 in sequence. Runtime is usually around a minute in the observed preparation environment. Numerical results and timings are recorded by the scripts, not assumed from execution alone.
 
-Regenerated files under `validation/` can change with package versions and include new timing records. Verify the manifest on a fresh copy before regeneration. The deposited files under `data/source/` and `data/processed/bootstrap_csf/` are never overwritten by these commands.
+## Verify before regeneration
 
-## New resampling, only for a separately labelled sensitivity analysis
+The manifest records the delivered file bytes. New timings, figures or validation outputs can legitimately change their hashes. Keep an unchanged copy and verify it before regeneration. Scripts do not overwrite the archived source observations or the preserved saved fit distributions.
 
-`python code/bootstrap/resample_from_reversals.py --help` describes two explicit schemes: the manuscript's first-ten/independent-staircase scheme and the nine-reversal/shared-subset scheme consistent with the archived CSF values. A caller must supply the condition, scheme and their own integer seed. The default number of newly generated iterations is 10,000. Every iteration receives a success/failure record; none is silently dropped. Output goes to a new folder under `validation/new_resampling/`, which is excluded from version control by default.
+The repository specifies LF endings for text and preserves binary/compressed files. After an intentional maintenance change, review the changes, run `python code/tools/build_manifest.py`, then verify a fresh Git checkout. Updating the manifest is a maintenance action, not evidence that the scientific analysis has been validated. New table columns also need dictionary entries.
 
-This new code uses the original operational contrast, per-staircase median and across-staircase mean, but it is not presented as the unidentified historical generator. It does not enforce unique joint subset vectors, unlike the supplied generator helper, and uses the current 0.1-cpd fit grid lower bound. It does not replace either archived dataset.
+## Optional new resampling
 
-## Importing data
+`python code/bootstrap/resample_from_reversals.py --help` describes the separately labelled sensitivity-analysis options. The user must explicitly select a condition, scheme and integer seed. The default is 10,000 new iterations. Each iteration has a success/failure record; output goes to a new `validation/new_resampling/` folder, excluded from version control by default.
 
-CSV files can be read by standard statistical software. Python's `csv` and `gzip` modules suffice for plain tables. For example, `gzip.open('data/processed/bootstrap_fpref.csv.gz', 'rt')` yields the CSV text. Use `numpy.loadtxt` for the headerless numeric source `.tsv.gz` files. Do not use an arbitrary row number as a verified link between a saved CSF input and a saved fit; the sample audit demonstrates mismatches.
+This optional program is not the unidentified historical generator and does not replace the saved distributions. It uses the per-staircase median and across-staircase mean, current 0.1-cpd fit grid, and no uniqueness constraint on joint subset vectors. No historical seed is invented.
+
+## Reading the tables
+
+Use ordinary CSV-reading software for headered tables. A `.csv.gz` file is gzip-compressed CSV; Python's `gzip.open(path, 'rt')` reads it without manual extraction. Use `numpy.loadtxt` for the headerless numeric `.tsv.gz` source files. Missing fields, units and original column order are documented in `data_dictionary.csv`.

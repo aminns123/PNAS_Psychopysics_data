@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-09-08",
+  "repository_url": "https://github.com/aminns123/PNAS_Psychopysics_data",
+  "version_doi": "10.5281/zenodo.22644071",
+  "concept_doi": "10.5281/zenodo.22644070",
+  "archive_version": "v1.0.0",
+  "archive_publication_date": "2026-09-07",
+  "archive_git_commit": "6e0d5e5188912744bf09f46b41fb3a54567ee55f",
+  "maintenance_base_commit": "b68d907f6e6bd5d817140199aff2f1b8945a4608",
+  "new_release_doi": null,
+  "preprint_doi": null,
+  "registered_rights": "CC-BY-4.0",
+  "repository_rights_scope": "requires author clarification",
+  "metadata_evidence": "https://api.datacite.org/dois/10.5281/zenodo.22644071",
+  "archive_payload_download_verified": false
+}

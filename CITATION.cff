@@ -1,15 +1,53 @@
-cff-version: 1.2.0
-message: "Please cite the associated paper and, after release, the permanent dataset DOI."
-type: dataset
-title: "Intrinsic Organization of Contrast Sensitivity in Human Vision: CSF and PSF data preparation"
-version: "0.1.0-preparation"
-authors:
-  - family-names: Minns
-    given-names: Alexander
-  - family-names: Gepshtein
-    given-names: Sergei
-  - family-names: Janson
-    given-names: Natalia
-  - family-names: "Savel'ev"
-    given-names: Sergey
-abstract: "Local preparation of deidentified contrast sensitivity and preferred spatial frequency measurements. Historical bootstrap and model discrepancies are documented in the validation report."
+{
+  "cff-version": "1.2.0",
+  "message": "For the archived empirical data cite v1.0.0 below. For later maintenance record the Git commit used; the version DOI does not identify unarchived changes.",
+  "type": "dataset",
+  "title": "Intrinsic Organization of Contrast Sensitivity in Human Vision: empirical CSF and PSF data and analysis",
+  "authors": [
+    {
+      "family-names": "Minns",
+      "given-names": "Alexander"
+    },
+    {
+      "family-names": "Gepshtein",
+      "given-names": "Sergei"
+    },
+    {
+      "family-names": "Janson",
+      "given-names": "Natalia"
+    },
+    {
+      "family-names": "Savel'ev",
+      "given-names": "Sergey"
+    }
+  ],
+  "repository-code": "https://github.com/aminns123/PNAS_Psychopysics_data",
+  "url": "https://github.com/aminns123/PNAS_Psychopysics_data",
+  "abstract": "Deidentified empirical contrast-sensitivity measurements, preferred-spatial-frequency summaries, saved resampling results and verification code. Historical resampling limitations are documented in the validation report.",
+  "preferred-citation": {
+    "type": "data",
+    "title": "Intrinsic Organization of Contrast Sensitivity in Human Vision: CSF and PSF data preparation",
+    "authors": [
+      {
+        "family-names": "Minns",
+        "given-names": "Alexander"
+      },
+      {
+        "family-names": "Gepshtein",
+        "given-names": "Sergei"
+      },
+      {
+        "family-names": "Janson",
+        "given-names": "Natalia"
+      },
+      {
+        "family-names": "Savel'ev",
+        "given-names": "Sergey"
+      }
+    ],
+    "version": "v1.0.0",
+    "date-released": "2026-09-07",
+    "doi": "10.5281/zenodo.22644071",
+    "url": "https://doi.org/10.5281/zenodo.22644071"
+  }
+}
