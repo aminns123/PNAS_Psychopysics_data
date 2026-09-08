@@ -6,7 +6,7 @@ Alexander Minns, Sergei Gepshtein, Natalia Janson, and Sergey Savel'ev.
 
 This package preserves the CSF (contrast sensitivity function) and PSF (preferred spatial frequency, written `f_pref`) data selected by the supplied plotting code for four manuscript subjects. It contains deidentified raw trials, reversal calculations, original saved CSFs, all saved preferred-frequency fits, resampling inputs, source-data tables, executable analysis, and verification plots.
 
-**The archived data and summaries are verified. Full historical bootstrap and whole-paper model reproducibility are not established.** Read [VALIDATION_REPORT.md](VALIDATION_REPORT.md) and [AUTHOR_QUESTIONS.md](AUTHOR_QUESTIONS.md).
+**The archived data and summaries are verified. Full historical bootstrap and whole-paper model reproducibility are not established.** Read [VALIDATION_REPORT.md](VALIDATION_REPORT.md).
 
 ## Start here
 
