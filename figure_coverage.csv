@@ -1,8 +1,4 @@
 figure,panels,status,files,limitation
-2,D1-D12 CSF observations,archived data and current-helper interpolation deposited,data/processed/figure_source_data/figure2_csf_points.csv; figure2_csf_curves_recomputed.csv,exact PDF curve identity not certified
+2,D1-D12 CSF observations,archived data and current-helper interpolation deposited,data/processed/figure_source_data/figure2_csf_points.csv; data/processed/figure_source_data/figure2_csf_curves_recomputed.csv,exact PDF curve identity not certified
 2,D summary psychophysical points,saved distributions and numerical summaries deposited,data/processed/figure_source_data/figure2_psf_points.csv,source selection traced to supplied driver; exact numerical identity with embedded PDF figure not certified
 3,A-C psychophysical points,saved distributions and numerical summaries deposited,data/processed/figure_source_data/figure3_psf_points.csv,source selection traced to supplied driver; exact numerical identity with embedded PDF figure not certified
-2;3,model curves,diagnostic replay deposited; author resolution needed,validation/model_replay/,"luminance transform, fit targets and added constraints differ from manuscript description"
-1;4,all,not completed in this CSF/PSF data preparation,,final figure-generating model and physiological source data were not established from supplied files
-2,A-C task schematic,illustrative manuscript content,,no separate quantitative dataset inferred
-SI,model derivations,context reviewed,,not claimed as a complete SI computational reproduction

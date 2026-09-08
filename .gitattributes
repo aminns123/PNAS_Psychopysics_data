@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Stable text bytes on Windows, macOS, Linux and release archives.
+* text=auto eol=lf
+*.gz binary
+*.png binary
+*.pdf binary
+*.zip binary

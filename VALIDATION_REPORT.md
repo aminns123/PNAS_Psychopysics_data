@@ -1,73 +1,52 @@
-# Validation report
+# Empirical CSF/PSF validation report
 
-Prepared 6 September 2026. **Status: archived CSF/PSF data preparation complete; final scientific release review still required.** No original data or code were changed, and nothing was uploaded.
+Updated for the empirical-only repository review on 8 September 2026. The numerical CSF/PSF observations and original saved distributions are preserved. The public v1.0.0 archive was released on 7 September; later maintenance changes are distinguished in [RELEASE_NOTES.md](RELEASE_NOTES.md).
 
-## Verified
+## Verified empirical results
 
-| Check | Result |
+| Check | Evidence |
 |---|---|
-| Subject selection and manuscript numbering | Four pseudonymous subjects, P01-P04; 12/6/7/6 luminance conditions |
-| Raw observations | 41,606 rows; all 16 original numeric columns preserved and checked against raw source matrices |
-| Staircases | 804 retained in the deposit; 802 included in primary CSFs |
-| Reversals | 8,185 turning points reproduced using the supplied detector; source row and ordinal linkage retained |
-| Primary thresholds and CSFs | All 255 saved sensitivities reproduced exactly from raw trials, including recorded staircase exclusions |
-| Saved PSF results | All 310,000 rows and all five original numeric fields preserved; 287,067 retained and 22,933 excluded by the supplied filtering rules |
-| PSF summaries | All 31 means and 2.5th/97.5th percentiles recalculated from the preserved selected distributions |
-| Saved resampled CSFs | 310,000 input files consolidated into 2,550,000 rows; original per-file SHA-256 checksums retained and reconstructible |
-| Original source bytes | Raw trial matrices, primary CSFs and saved fit tables preserved within gzip; normalization of bootstrap table layout is reversible to original bytes |
-| Baseline CSF fitting | All 31 current-helper interpolations executed; parameters, curves and numerical warnings saved separately |
-| Model execution | Eight diagnostic calculations (four f_n fits, four f_r curve evaluations) executed using extracted source functions; scientific agreement remains unresolved |
-| Plotting | Four CSF figures, one PSF figure and one staircase-diagnostic figure inspected for legible labels and data display |
-| Paths and privacy | Pseudonymous public filenames; no private computer paths or exact acquisition-date fields in the public candidate; original locator/mapping records kept separately |
+| Subject selection | Manuscript P01-P04; 12/6/7/6 luminance conditions |
+| Raw observations | 41,606 rows; all 16 source numeric columns preserved |
+| Staircases and reversals | 804 recorded staircases; 802 included; 8,185 detected reversals |
+| Primary CSFs | All 255 saved sensitivities recovered exactly by the final-eight median / across-staircase mean calculation |
+| Saved PSF results | All 310,000 rows and all five original numeric fields preserved |
+| PSF summary selection | 287,067 retained; 22,933 excluded; all 31 means and percentile intervals reproduced |
+| Thesis cross-check | All 31 NRMSE-retained and final-retained counts agree with Table 4.5 |
+| Saved CSF inputs | 310,000 source files consolidated into 2,550,000 rows; original bytes reconstructible and checksum-checked |
+| Baseline interpolation | 31 fits evaluated with the supplied current helper; separately labelled recomputed curves/parameters |
+| Empirical plots | Four CSF figures, one PSF figure and one staircase figure |
 
-`validation/recomputed/run_result.json` records the actual environment and numerical checks. `code/tests/verify_package.py` performs full archive-integrity checks. The complete `code/run_all.py` workflow passed from a separate copy in 61.5 seconds, launched from a different working directory with only package-relative data inputs. This also verified that an in-package virtual environment does not interfere with archive checks. Every one of the 310,000 consolidated CSF source files passed original-byte checksum reconstruction, and all 310,000 saved PSF rows passed original-token checks. `validation/final_preparation_checks.json` records these preparation results.
+The empirical verification programs write their numerical evidence to `validation/recomputed/`. Thesis comparisons are in [thesis_retention_checks.json](validation/thesis_retention_checks.json). [source_manifest.csv](source_manifest.csv) preserves original hashes, and the 31 compressed manifests under `validation/bootstrap_source_manifest/` identify the saved CSF inputs without private locations.
 
-## Historical bootstrap is not reproduced
+## Historical resampling provenance remains unresolved
 
-The saved distributions used by the supplied final plotting driver contain 10,000 rows per condition. The current generation file instead has `nRetreat = 5`, `threshold_per_staircase = 'Geometric_mean'`, the zero-based pool `[2,3,4,5,6,7,8,9]`, and execution disabled. The current fitting driver likewise selects a five-reversal input path. These are materially different from both the selected eight-reversal archive and the manuscript's stated scheme. They were preserved as provenance, not run against the original data.
+The paper and thesis describe eight-of-ten reversal selection without replacement and 10,000 resampling iterations per condition. The available input archive contains index 0, which is identical to the deterministic primary CSF, plus 9,999 additional inputs. No original random seed or generator state was recovered.
 
-All 2,549,745 nonbaseline CSF point values in the available input files can be generated by taking a common eight-element subset of detected reversal indices 1-9 (reversals 2-10) for the staircases at each frequency, applying a median per staircase and a mean across staircases. The first-ten pool is a superset and can also generate those values. This is evidence consistent with an eight-of-nine/shared-subset implementation; it does **not** identify the original random sequence or prove that individual reversal choices were independent. The exact original generator must be confirmed before describing these files as verified eight-of-ten independent-staircase resampling.
+All 2,549,745 nonbaseline input point values are compatible with a common eight-element subset of detected indices 1-9 (reversals 2-10), using a median within each staircase and a mean across staircases at a frequency. The first-ten pool contains this pool and can also generate those values. This supports a candidate explanation of the archived values; it does not prove the exact algorithm, independence of choices, or historical random sequence. The supplied generator/fitter settings at preparation time do not uniquely establish the settings that created this eight-reversal archive.
 
-Input index 0 equals the deterministic final-eight primary CSF. Each available folder has indices 0-9999, hence 9,999 additional saved inputs. The manuscript says 10,000 resampling iterations. No iteration was added or relabelled to reconcile that discrepancy.
+A fixed sample of five input indices per condition (155 total) was refitted. The current helper uses a 0.1-cpd grid lower bound. A separately labelled historical-grid candidate starts at the lowest retained measured frequency. Only 18/155 same-position pairs match all five saved metrics after four-decimal rounding; 21/155 agree within 0.0001. The largest same-position preferred-frequency difference is 5.814 cpd. Searching every saved row finds a matching five-metric row for 37/155 sample inputs. This does not establish a complete input-to-fit mapping.
 
-A fixed sample of five input indices per condition (155 total) was refitted. The current helper uses a 0.1-cpd grid lower bound. An explicitly labelled historical-grid candidate starts at the lowest retained measured frequency, matching several baseline records. Only **18/155** sampled pairs match all five saved metrics after four-decimal rounding; **21/155** agree within 0.0001 across all five metrics. The largest same-position preferred-frequency difference is **5.814 cpd**. Searching across all saved rows yields an exact five-metric four-decimal match for **37/155** sample inputs; this still does not establish a complete correspondence.
+The audit does not determine whether regeneration, ordering, fit settings or historical software differences caused the mismatch. Saved PSF row numbers therefore remain source row numbers, not verified input-iteration labels. The distributions used for the archived summaries are preserved independently. Historical success flags remain blank where no success log was supplied. See [sample_fit_summary.json](validation/sample_fit_summary.json) and [resampling_pool_audit.json](validation/resampling_pool_audit.json).
 
-Thus the issue cannot be treated as a harmless rounding difference. Input files may have been regenerated/reordered, fit settings may differ, and historical package versions are unknown. The audit does not determine a single cause. Neither positional input-to-fit linkage nor reconstruction of the original random draw sequence is claimed. The saved fit distributions are preserved independently as the authoritative source for the currently selected figure summaries. No failed historical iterations or original iteration IDs were invented; `fit_success_recorded` is empty because no separate success log was supplied.
+## Reversals, exclusions and acquisition evidence
 
-See `validation/resampling_pool_audit.json`, `validation/sample_saved_fit_checks.csv`, and `validation/sample_fit_summary.json`.
+The supplied detector returns 657 staircases with 10 reversals, 143 with 11, two with 12, and two with 9. The two nine-reversal records are the excluded P02/10-cd/m2 staircases. Their exclusion reproduces the primary CSF, but its scientific reason was not recorded. For the 145 included staircases with more than ten detected reversals, the verified calculation uses the final eight detected values. The acquisition stopping counter has not been identified with the detector count by assumption.
 
-## Reversal and exclusion findings
+Eight existing frequency points are excluded from baseline CSF fitting while remaining in the deposited observations. Two additional out-of-range exclusion indices have no effect. [exclusions_log.csv](data/exclusions/exclusions_log.csv) records both active and inactive exclusions, without inventing rationales.
 
-The supplied detector returns 657 staircases with 10 reversals, 143 with 11, two with 12, and two with 9. The two nine-reversal staircases are the excluded records at P02, 10 cd/m2. Their exclusion is encoded in the supplied generation configuration and reproduces the saved primary CSF. The reason was not recorded; their shorter reversal count is an observation, not an invented exclusion rationale.
+The thesis supports the primary threshold estimator and supplies more detailed display and calibration descriptions. It does not resolve session-to-calibration linkage, all unused source-column meanings, or the difference between some stored timing values and the reported CSF duration. [EMPIRICAL_METHODS.md](EMPIRICAL_METHODS.md) distinguishes reported methods from verified execution.
 
-For the 145 included staircases with more than ten detected reversals, the successful primary-CSF reconstruction uses the final eight **detected** values. The manuscript's phrase 'reversals 3-10' is not literally equivalent for these records. Confirm the detector's relation to the acquisition stopping counter. All detected values remain deposited.
+## Figures, environment and archive maintenance
 
-The final plotting driver omits eight existing frequency points from baseline CSF fitting while retaining them as plotted observations. It also lists two nonexistent source-point indices, which have no effect. The generation and plotting drivers contain different fit-exclusion lists. All actual and inactive exclusions are recorded, with unknown scientific reasons labelled as such. The original driver repeats one subject in an intermediate array; final source selection was traced and the deposit includes each manuscript subject once.
+Figure 2/3 empirical source tables follow the supplied plotting selection. Exact numerical identity with every point or interpolated curve embedded in a submitted PDF has not been certified. The scope is the empirical CSF and PSF results shown in [figure_coverage.csv](figure_coverage.csv).
 
-## Model findings
+The observed validation environment is Python 3.12.14, NumPy 2.5.3, SciPy 1.18.1 and Matplotlib 3.11.1; these are not asserted historical versions. The programs use package-relative inputs. Original top-level scripts that can write into acquisition folders are not executed by the package driver.
 
-The extracted functions preserve `k = 2*pi*f`, the signed `argmax(xi)` resonance criterion and the minus branch for quantitative intrinsic-frequency fits. Separate parameter orders and outputs are deposited. However:
+The pre-maintenance manifest referred to two deleted documents and did not cover subsequently added files. Git's automatic Windows line endings also changed text bytes. The affected numerical tables were unchanged after line-ending normalization. This review specifies LF checkouts and regenerates the manifest over the revised file set; original compressed source files remain untouched. Verify a fresh copy before running computations that regenerate validation outputs.
 
-1. Intrinsic fits use `log10(L+100)`, while the resonance function evaluates a drive grid from 0 to 40 and labels its horizontal axis `10**(drive/10)`. This is equivalent to drive `10*log10(L)` and differs from the manuscript's common mapping.
-2. The current intrinsic fitting code targets peaks of individual primary CSF interpolants, while the plotted points are means of retained PSF distributions.
-3. The supplied P03 intrinsic fitting workflow excludes two luminance points and adds three auxiliary targets at 500, 600 and 900 using a repeated endpoint value. These are identified as auxiliary constraints, not experimental observations.
-4. Resonance parameter sets are literal values in the supplied plotting code. The final resonance optimization workflow and its complete bounds/objective were not established.
-5. Intrinsic-fit covariance could not be estimated for all four replays. These underdetermined/interdependent empirical fits are not treated as uniquely identified parameter estimates.
+The complete five-stage workflow passed on 8 September 2026 from a fresh Git-index checkout made with `core.autocrlf=true`. The initial manifest verification passed in that checkout. All 512 data files are unchanged relative to the pre-maintenance repository apart from text line endings; compressed sources are byte-identical. The citation file passes the official CFF 1.2.0 schema, and the documentation link and package-scope scans pass. See [empirical_repository_checks.json](validation/empirical_repository_checks.json) for the recorded results. Workflow success does not remove the historical resampling limitations described above.
 
-The replay wrapper uses `.item()` when serializing one-element NumPy outputs for compatibility with the validation NumPy version. Source numerical bodies were not changed. See [MODEL_NOTES.md](MODEL_NOTES.md).
+## Remaining empirical and release decisions
 
-## Calibration, metadata and manuscript coverage
-
-Recorded stimulus metadata includes `time_Stimulus` values that need comparison with the manuscript's 300-ms presentation description; some saved metadata values are 250. The original timing units and whether these are initial/default or actually executed settings must be verified from acquisition code. The source contrast formula is an intensity normalization; its interpretation as physical Weber contrast requires calibration documentation.
-
-Condition display/luminance settings are preserved. Four candidate bit-depth/calibration datasets were found, but their relationship to these participant sessions was not established, so no calibration curve or parameter meaning was fabricated. [CALIBRATION_NOTES.md](CALIBRATION_NOTES.md) lists the available evidence. Unused raw columns remain explicitly labelled as source columns when their semantics are not established.
-
-Figure 2 and Figure 3 source tables follow the supplied plotting code. The embedded PDF figures do not provide a certified machine-readable numerical reference, so exact agreement with every rendered paper point or curve is not claimed. Figure 1, Figure 4 and the entire SI computational workflow are not a completed deliverable of this CSF/PSF preparation. The source-to-figure status is in `figure_coverage.csv`.
-
-## Environment and journal guidance
-
-Validation used an isolated dependency folder with observed Python 3.12.14, NumPy 2.5.3, SciPy 1.18.1 and Matplotlib 3.11.1. The standalone execution check passed from a separate package copy. Historical versions of Python, PsychoPy, Pyglet and analysis libraries were not recovered. The original supplied code was inspected and snapshotted; it was not executed as a top-level script because it can write into source directories. A final source-content recheck found no changes in any of the 476 inventoried source records. Automated screening of 603 text or compressed-text package files found none of the checked private-path, participant-label, acquisition-date, account-name or email patterns; this supplements inspection and does not establish public-sharing consent.
-
-Direct checks of the official PNAS author pages on 6 September 2026 returned HTTP 403. The supplied checklist and PNAS-branded 2025 Overleaf template support the public-repository/data-sharing-plan approach. This is a documented, open-format package, not a certificate of journal acceptance. Recheck the official policy and portal requirements before submission.
-
-Licenses, public-release consent, author contact/metadata, exclusion rationales, repository DOI and model/bootstrap discrepancies require author resolution. [AUTHOR_QUESTIONS.md](AUTHOR_QUESTIONS.md) lists the concrete remaining items.
+Recover the exact historical CSF resampling/fitting source and input pairing if available; clarify the staircase and frequency exclusions, acquisition timing and calibration linkage; confirm the exact submitted manuscript files; and clarify reuse terms. The existing DOI and GitHub release are real, while licensing scope and a bioRxiv preprint identifier are not inferred. [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) identifies the archive accurately.

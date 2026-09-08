@@ -1,3 +1,11 @@
-CODE LICENSE SELECTION PENDING
+CODE REUSE STATUS
 
-No open-source license is asserted for the supplied code. The relevant rights holders must approve a code license before public release. New packaging and verification code is included for review; this placeholder must be replaced with the approved terms.
+Zenodo v1.0.0 metadata lists CC BY 4.0 for the archived record, while the
+original repository code-license file was a pending-selection placeholder.
+No separate software-specific license has been confirmed by the authors.
+
+This discrepancy should be clarified by the relevant rightsholders before
+the maintenance revision is presented as carrying settled code-reuse terms.
+This notice does not grant a new software license or change the terms shown
+on the existing Zenodo record. See LICENSE_DATA.txt and the version DOI:
+https://doi.org/10.5281/zenodo.22644071

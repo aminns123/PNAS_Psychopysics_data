@@ -12,6 +12,5 @@
   "saved_psf_rows": 310000,
   "retained_psf_rows": 287067,
   "runtime_seconds": 6.592735100000027,
-  "historical_random_draw_regeneration": "not_claimed",
-  "whole_paper_model_reproduction": "not_claimed"
+  "historical_random_draw_regeneration": "not_claimed"
 }

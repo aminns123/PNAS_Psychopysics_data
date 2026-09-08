@@ -1,3 +1,11 @@
-DATA LICENSE SELECTION PENDING
+DATA REUSE STATUS
 
-This is a local preparation copy. No public data license or additional reuse permission is granted by this placeholder. The authors must confirm the permitted sharing scope and choose a license before release. Replace this file with the approved license text.
+The registered metadata for Zenodo v1.0.0, DOI 10.5281/zenodo.22644071,
+lists Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+The first repository version contained a pending-license placeholder.
+The intended coverage of the archive's license across data and code still
+requires clarification by the authors/rightsholders. This notice records
+the existing public metadata and does not change or withdraw that metadata,
+nor does it introduce a new license for the maintenance revision.

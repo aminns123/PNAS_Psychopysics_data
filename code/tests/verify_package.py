@@ -66,6 +66,19 @@ def main():
             assert (r['retained_for_summary']=='True')==(0<=float(s[1])<=.3 and float(s[0])>1.05)
             counts['psf_rows_exact_tokens']+=1
     assert set(r['participant_id'] for r in rows(ROOT/'data/processed/participants.csv'))=={'P01','P02','P03','P04'}
+    # Independent published-thesis counts, compared to every preserved fit row.
+    thesis=json.loads((ROOT/'validation/thesis_retention_checks.json').read_text(encoding='utf-8'))
+    summaries={r['condition_id']:r for r in rows(ROOT/'data/processed/preferred_frequency.csv')}
+    thesis_rows={r['condition_id']:r for r in thesis['rows']}
+    assert len(thesis['rows'])==len(thesis_rows)==31
+    assert set(thesis_rows)==set(summaries)==set(bycondition)
+    for cid,t in thesis_rows.items():
+        rr=bycondition[cid]
+        nrmse=sum(0<=float(r['nrmse'])<=.3 for r in rr)
+        retained=sum(r['retained_for_summary']=='True' for r in rr)
+        assert nrmse==int(summaries[cid]['n_pass_nrmse'])==t['thesis_n_pass_nrmse'],cid
+        assert retained==int(summaries[cid]['n_retained'])==t['thesis_n_retained'],cid
+        counts['thesis_conditions_retention_verified']+=1
     for p in (ROOT/'code').rglob('*.py'):ast.parse(p.read_text(encoding='utf-8-sig'));counts['python_files_syntax_checked']+=1
     dictionary={(r['file_name'],r['column_name']) for r in rows(ROOT/'data_dictionary.csv')}
     for p in package_files():

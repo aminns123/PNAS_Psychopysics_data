@@ -1,0 +1,57 @@
+{
+  "review_date": "2026-09-08",
+  "scope": "empirical CSF and PSF",
+  "base_commit": "b68d907f6e6bd5d817140199aff2f1b8945a4608",
+  "fresh_git_index_checkout_with_core_autocrlf_true": "PASS",
+  "full_documented_workflow_exit_code": 0,
+  "citation_cff_official_1_2_0_schema": "PASS",
+  "relative_document_links": "PASS",
+  "empirical_scope_text_scan_including_compressed_tables": "PASS",
+  "private_source_location_scan": "PASS",
+  "data_files_preserved_ignoring_text_line_endings": 512,
+  "data_numeric_changes": 0,
+  "bootstrap_source_files_reconstructed_exactly": 310000,
+  "saved_psf_rows_exact_tokens": 310000,
+  "thesis_retention_conditions_verified": 31,
+  "primary_reproduction": {
+    "status": "PASS",
+    "scope": "raw trials to archived CSF points; saved PSF distributions to preferred-frequency summaries; current-helper baseline fits unless skipped",
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "conditions": 31,
+    "trials_numeric_roundtrip_checked": 41606,
+    "staircases_checked": 804,
+    "csf_points_checked": 255,
+    "all_csf_points_exactly_equal": true,
+    "saved_psf_rows": 310000,
+    "retained_psf_rows": 287067,
+    "runtime_seconds": 9.75781619999998,
+    "historical_random_draw_regeneration": "not_claimed"
+  },
+  "sampled_historical_fit_comparison": {
+    "fits_checked": 155,
+    "failures": 0,
+    "all_5_metrics_match_4dp": 18,
+    "all_5_metrics_within_0_0001": 21,
+    "max_f_pref_absolute_difference_cpd": 5.813999999999993,
+    "sample_indices": [
+      0,
+      1,
+      1234,
+      5000,
+      9999
+    ],
+    "runtime_seconds": 20.93337470000006,
+    "historical_grid_candidate": "min(x) to max(x)+10, 1000-step arange; inferred from saved metrics; current supplied helper uses 0.1",
+    "samples_matching_any_saved_row_at_4dp": 37
+  },
+  "figure_outputs_generated": 6,
+  "representative_figures_visually_inspected": [
+    "csf_p01",
+    "preferred_frequency_all_subjects",
+    "staircase_examples"
+  ],
+  "historical_random_sequence_reproduction_claimed": false,
+  "remote_publication_performed": false
+}

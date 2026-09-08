@@ -1,5 +1,5 @@
 {
-  "package_version": "0.1.0-preparation",
+  "package_version": "empirical-maintenance-review",
   "prepared_date": "2026-09-06",
   "participant_ids": [
     "P01",
@@ -39,5 +39,6 @@
     "historical_rng_state": null,
     "saved_rows_per_condition": 10000,
     "saved_fit_iteration_linkage": "saved row order preserved; original iteration labels and failure log not recorded"
-  }
+  },
+  "scope_review_date": "2026-09-08"
 }

@@ -1,0 +1,57 @@
+{
+  "review_date": "2026-09-08",
+  "scope": "empirical CSF and PSF",
+  "documents": [
+    {
+      "source_id": "DOC_MAIN",
+      "file_name": "minns_etal_main_07_SEPT_2026.pdf",
+      "sha256": "d912d5c112ba9aa07fb981f20f2b3002eece3a1c9f2135025dd59ccddd8d3388",
+      "bytes": 6753337,
+      "pdf_pages": 22,
+      "relevant_pdf_pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "source_id": "DOC_SUPPLEMENT",
+      "file_name": "minns_etal_supp_07_SEPT_2026.pdf",
+      "sha256": "179cb68e3ba5c82ae5e905ed9ad2da05ad44d602966f0e1baabed9960bb9bbfa",
+      "bytes": 801806,
+      "pdf_pages": 15,
+      "relevant_pdf_pages": [
+        10,
+        11
+      ]
+    },
+    {
+      "source_id": "DOC_THESIS",
+      "file_name": "thesis.pdf",
+      "sha256": "36b3595d4c9f90e6727ba13e4d9b96e7d880b660a6080893e975d69434d739ed",
+      "bytes": 57369143,
+      "pdf_pages": 291,
+      "relevant_pdf_pages": [
+        159,
+        160,
+        161,
+        162,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        242,
+        243,
+        244,
+        245
+      ]
+    }
+  ],
+  "submission_identity": "Author-supplied comparison files; actual portal uploads not independently verified.",
+  "main_and_supplement_match_earlier_supplied_files": true
+}
